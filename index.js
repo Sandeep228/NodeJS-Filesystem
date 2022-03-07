@@ -3,7 +3,8 @@ const fs = require("fs");
 const express = require("express")
 const app = express()
 
-const PORT = 9000;
+require("dotenv").config();
+const PORT = process.env.PORT || 5000;
 
 const timestamp = () => {
     const d = new Date();
